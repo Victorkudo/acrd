@@ -1,0 +1,118 @@
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+.container{
+    width: 200px;
+    height: 300px;
+    background: rgb(214, 19, 19);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.container h2{
+    z-index: 1;
+    color: white;
+    font: 2rem;
+    position: relative;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0,180,255), rgb(22, 185, 7));
+    height: 500px;
+    animation: animar 4s linear infinite;
+    transition: all 0.1s linear;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    background: rgb(245, 153, 153);
+    inset: 4px;
+    border-radius: 20px;
+}
+
+
+
+
+.container1{
+    width: 200px;
+    height: 300px;
+    background: rgb(65, 13, 124);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.container1 h2{
+    z-index: 1;
+    color: white;
+    font: 2rem;
+    position: relative;
+}
+.container1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(117, 191, 223), rgb(233, 117, 233));
+    height: 500px;
+    animation: animar 4s linear infinite;
+    transition: all 0.1s linear;
+}
+.container1::after{
+    content: '';
+    position: absolute;
+    background: rgb(74, 0, 247);
+    inset: 4px;
+    border-radius: 20px;
+}
+
+
+
+
+    .container2{
+        width: 200px;
+        height: 300px;
+        background: rgb(0, 0, 0);
+        position: relative;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .container2 h2{
+        z-index: 1;
+        color: white;
+        font: 2rem;
+        position: relative;
+    }
+    .container2::before{
+        content: '';
+        position: absolute;
+        width: 100px;
+        background-image: linear-gradient(180deg, rgb(141, 255, 249), rgb(255, 45, 255));
+        height: 500px;
+        animation: animar 4s linear infinite;
+        transition: all 0.1s linear;
+    }
+    .container2::after{
+        content: '';
+        position: absolute;
+        background: rgb(0, 255, 149);
+        inset: 4px;
+        border-radius: 20px;
+    }
+
+@keyframes animar{
+    from{ transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
